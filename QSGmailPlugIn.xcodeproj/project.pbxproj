@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1AC9600486D14A00FE50C9 /* Gmail Module */ = {
+		8D1AC9600486D14A00FE50C9 /* Gmail Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Module" */;
+			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Plugin" */;
 			buildPhases = (
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
@@ -122,7 +122,7 @@
 			);
 			dependencies = (
 			);
-			name = "Gmail Module";
+			name = "Gmail Plugin";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSGmailPlugIn;
 			productReference = 8D1AC9740486D14A00FE50C9 /* Gmail Plugin.qsplugin */;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1AC9600486D14A00FE50C9 /* Gmail Module */,
+				8D1AC9600486D14A00FE50C9 /* Gmail Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +220,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Module" */ = {
+		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F6B3EEC085CE8DF000735A8 /* Debug */,
