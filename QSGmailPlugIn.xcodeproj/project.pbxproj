@@ -18,19 +18,13 @@
 		14A8D14610CE55A7003857E3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14A8D14710CE55A7003857E3 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		14A8D14810CE55A7003857E3 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		14A8D14910CE55A7003857E3 /* QSPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPlugIn_Prefix.pch; sourceTree = "<group>"; };
 		14A8D14A10CE55A7003857E3 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		14A8D14B10CE55A7003857E3 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		14A8D14C10CE55A7003857E3 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		32DBCF980370C29C00C91783 /* QSGmailPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSGmailPlugIn_Prefix.pch; sourceTree = "<group>"; };
-		7F35FF3C07F9ACD90056051D /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFrameworks; };
-		7F35FF3D07F9ACD90056051D /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
-		7F35FF3E07F9ACD90056051D /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
-		7F35FF3F07F9ACD90056051D /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
-		7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
-		7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
+		7F35FF3C07F9ACD90056051D /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35FF3E07F9ACD90056051D /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* Gmail Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gmail Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC9740486D14A00FE50C9 /* Gmail Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gmail Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1EAB045068128A200774DFF /* QSGmailPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSGmailPlugIn.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSGmailPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSGmailPlugIn.h; sourceTree = "<group>"; };
@@ -55,7 +49,6 @@
 			children = (
 				4D0C0D680E0FBE1D0027D189 /* Configuration */,
 				32DBCF9E0370C38000C91783 /* Classes */,
-				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
@@ -74,7 +67,7 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* Gmail Module.qsplugin */,
+				8D1AC9740486D14A00FE50C9 /* Gmail Plugin.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +78,6 @@
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 				7F35FF3C07F9ACD90056051D /* QSCore.framework */,
 				7F35FF3E07F9ACD90056051D /* QSFoundation.framework */,
-				7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */,
-				7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */,
-				7FC20C8107FB741700FDD3CA /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,14 +91,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		32DBCF9F0370C38200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32DBCF980370C29C00C91783 /* QSGmailPlugIn_Prefix.pch */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
 		4D0C0D680E0FBE1D0027D189 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,29 +98,20 @@
 				14A8D14610CE55A7003857E3 /* Debug.xcconfig */,
 				14A8D14710CE55A7003857E3 /* Developer.xcconfig */,
 				14A8D14810CE55A7003857E3 /* QSPlugIn_Debug.xcconfig */,
-				14A8D14910CE55A7003857E3 /* QSPlugIn_Prefix.pch */,
 				14A8D14A10CE55A7003857E3 /* QSPlugIn_Release.xcconfig */,
 				14A8D14B10CE55A7003857E3 /* QSPlugIn.xcconfig */,
 				14A8D14C10CE55A7003857E3 /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
-		};
-		7FC20C8107FB741700FDD3CA /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7F35FF3D07F9ACD90056051D /* QSEffects.framework */,
-				7F35FF3F07F9ACD90056051D /* QSInterface.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1AC9600486D14A00FE50C9 /* Gmail Module */ = {
+		8D1AC9600486D14A00FE50C9 /* Gmail Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Module" */;
+			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Plugin" */;
 			buildPhases = (
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
@@ -149,10 +122,10 @@
 			);
 			dependencies = (
 			);
-			name = "Gmail Module";
+			name = "Gmail Plugin";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSGmailPlugIn;
-			productReference = 8D1AC9740486D14A00FE50C9 /* Gmail Module.qsplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* Gmail Plugin.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -162,12 +135,16 @@
 			isa = PBXProject;
 			buildConfigurationList = 7F6B3EEF085CE8DF000735A8 /* Build configuration list for PBXProject "QSGmailPlugIn" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSGmailPlugIn */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1AC9600486D14A00FE50C9 /* Gmail Module */,
+				8D1AC9600486D14A00FE50C9 /* Gmail Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +189,17 @@
 /* Begin XCBuildConfiguration section */
 		7F6B3EEC085CE8DF000735A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D14810CE55A7003857E3 /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = 14A8D14B10CE55A7003857E3 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "Gmail Module";
+				PRODUCT_NAME = "Gmail Plugin";
 			};
 			name = Debug;
 		};
 		7F6B3EED085CE8DF000735A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D14A10CE55A7003857E3 /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = 14A8D14B10CE55A7003857E3 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "Gmail Module";
+				PRODUCT_NAME = "Gmail Plugin";
 			};
 			name = Release;
 		};
@@ -243,7 +220,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Module" */ = {
+		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "Gmail Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F6B3EEC085CE8DF000735A8 /* Debug */,
