@@ -7,9 +7,7 @@
 //
 
 #import "QSGmailPlugIn.h"
-#define QSURLEncode(s) [(NSString*)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)s, NULL, (CFStringRef)@":/=+&?", kCFStringEncodingUTF8) autorelease]
 @implementation QSGmailPlugIn
-
 
 - (void)sendEmailTo:(NSArray *)addresses
                from:(NSString *)sender 
@@ -25,8 +23,8 @@
 	[mailURL appendFormat:@"&to = %@", [addresses componentsJoinedByString:@", "]];
   //	[mailURL appendFormat:@"&cc = %@",];
   //	[mailURL appendFormat:@"&bcc = %@",];
-	[mailURL appendFormat:@"&su = %@", QSURLEncode(subject)];
-	[mailURL appendFormat:@"&body = %@", QSURLEncode(body)];
+	[mailURL appendFormat:@"&su = %@", [subject URLEncoding]];
+	[mailURL appendFormat:@"&body = %@", [body URLEncoding]];
   
   
   //Just append any of these to the GMail Compose Email URL above.
@@ -43,17 +41,13 @@
   //Body: "body"
   //Usage: "%26body%3DBlahblah"
   //	https://mail.google.com/mail/?dest = https://mail.google.com/mail?view = cm&fs = 1&tf = 1&to = zero@blacktree.com&su = blah&body = blah
-	NSString *trueURL = mailURL; //[NSString stringWithFormat:@"https://mail.google.com/mail/?dest = %@", (mailURL)];
-  NSLog(@"email to %@", trueURL);
-  
-  if (0) {
+
+#if 0   
     id cont = [[NSClassFromString(@"QSSimpleWebWindowController") alloc] initWithWindow:nil];
     [cont openURL:[NSURL URLWithString:trueURL]];
     [[cont window] makeKeyAndOrderFront:nil];
-  } else {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:trueURL]];
-    
-  }
+#endif
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:mailURL]];
 	
 	
 }

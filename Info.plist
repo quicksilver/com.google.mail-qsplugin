@@ -5,17 +5,21 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>Gmail Module</string>
+	<string>Gmail Plugin</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.blacktree.Quicksilver.QSGmailPlugIn</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Gmail Module</string>
+	<string>Gmail Plugin</string>
+	<key>CFBundleDisplayName</key>
+	<string>Gmail Plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
-	<string>47</string>
+	<string>49</string>
+	<key>CFBundleSignature</key>
+	<string>1.0.0</string>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -41,6 +45,18 @@
 			<key>com.google.GmailNotifier</key>
 			<string>QSGmailPlugIn</string>
 		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>plugins</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<string>com.blacktree.Quicksilver.QSEmailSupport</string>
+				<key>name</key>
+				<string>Mail Support</string>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>

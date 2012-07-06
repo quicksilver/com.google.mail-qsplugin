@@ -6,8 +6,6 @@
 //  Copyright __MyCompanyName__ 2006. All rights reserved.
 //
 
-#import <QSCore/QSObject.h>
-
 @interface QSGmailPlugIn : NSObject
 {
 }
