@@ -46,5 +46,17 @@
 			<string>QSGmailPlugIn</string>
 		</dict>
 	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>plugins</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<string>com.blacktree.Quicksilver.QSEmailSupport</string>
+				<key>name</key>
+				<string>Mail Support</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
