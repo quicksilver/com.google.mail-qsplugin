@@ -16,15 +16,15 @@
         attachments:(NSArray *)pathArray
             sendNow:(BOOL)sendNow
 {
-	NSMutableString *mailURL = [NSMutableString stringWithString:@"https://mail.google.com/mail/?view = cm"];
-	[mailURL appendFormat:@"&fs = 1"]; // fullscreen
-	[mailURL appendFormat:@"&tf = 1"]; // tearoff
+	NSMutableString *mailURL = [NSMutableString stringWithString:@"https://mail.google.com/mail/?view=cm"];
+	[mailURL appendFormat:@"&fs=1"]; // fullscreen
+	[mailURL appendFormat:@"&tf=1"]; // tearoff
 	
-	[mailURL appendFormat:@"&to = %@", [addresses componentsJoinedByString:@", "]];
+	[mailURL appendFormat:@"&to=%@", [addresses componentsJoinedByString:@", "]];
   //	[mailURL appendFormat:@"&cc = %@",];
   //	[mailURL appendFormat:@"&bcc = %@",];
-	[mailURL appendFormat:@"&su = %@", [subject URLEncoding]];
-	[mailURL appendFormat:@"&body = %@", [body URLEncoding]];
+	[mailURL appendFormat:@"&su=%@", [subject URLEncoding]];
+	[mailURL appendFormat:@"&body=%@", [body URLEncoding]];
   
   
   //Just append any of these to the GMail Compose Email URL above.
@@ -47,7 +47,11 @@
     [cont openURL:[NSURL URLWithString:trueURL]];
     [[cont window] makeKeyAndOrderFront:nil];
 #endif
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:mailURL]];
+    NSURL *url = [NSURL URLWithString:mailURL];
+    if (!url) {
+        NSLog(@"Error opening URL %@", mailURL);
+    }
+    [[NSWorkspace sharedWorkspace] openURL:url];
 	
 	
 }
