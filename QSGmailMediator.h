@@ -10,4 +10,7 @@
 
 @interface QSGmailMediator : NSObject<QSMailMediator>
 
+
+-(NSString *)serverName;
+
 @end

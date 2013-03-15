@@ -10,18 +10,22 @@
 
 @implementation QSGmailMediator
 
+- (NSString *)serverName {
+    return @"smtp.gmail.com";
+}
+
 - (NSDictionary *)smtpServerDetails
 {
     NSMutableDictionary *details = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                    @"smtp.gmail.com", QSMailMediatorServer,
+                                    [self serverName], QSMailMediatorServer,
                                     @"465", QSMailMediatorPort,
                                     @"YES", QSMailMediatorTLS,
                                     @"YES", QSMailMediatorAuthenticate,
                                     nil];
-    NSString *user = @"someone@gmail.com";
+    NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:@"QSGmailUsername"];
     UInt32 passLen = 0;
     void *password = nil;
-    OSStatus status = SecKeychainFindInternetPassword(NULL, (UInt32)[server length], [server UTF8String], 0, NULL, (UInt32)[user length], [user UTF8String], 0, NULL, 0, kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, &passLen, &password, NULL);
+    OSStatus status = SecKeychainFindInternetPassword(NULL, (UInt32)[[self serverName] length], [[self serverName] UTF8String], 0, NULL, (UInt32)[user length], [user UTF8String], 0, NULL, 0, kSecProtocolTypeSMTP, kSecAuthenticationTypeDefault, &passLen, &password, NULL);
     if (status == noErr) {
         NSString *smtpPassword = [NSString stringWithCString:password encoding:[NSString defaultCStringEncoding]];
         SecKeychainItemFreeContent(NULL, password);
