@@ -49,7 +49,7 @@
 		<key>QSMailMediators</key>
 		<dict>
 			<key>com.google.GmailNotifier</key>
-			<string>QSGmailPlugIn</string>
+			<string>QSGmailMediator</string>
 		</dict>
 	</dict>
 	<key>QSRequirements</key>
