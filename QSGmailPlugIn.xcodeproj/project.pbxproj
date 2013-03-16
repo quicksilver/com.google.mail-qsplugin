@@ -14,6 +14,7 @@
 		CD9ADF1116F3850F00914C20 /* QSGmailPluginPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9ADF1016F3850F00914C20 /* QSGmailPluginPrefs.xib */; };
 		CD9ADF1416F3887000914C20 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9ADF1216F3886700914C20 /* Security.framework */; };
 		CD9ADF1716F38A9600914C20 /* QSGmailMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9ADF1616F38A9600914C20 /* QSGmailMediator.m */; };
+		CDD3F6EF16F404180000375B /* gmail.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD3F6EE16F404180000375B /* gmail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CD9ADF1516F38A9600914C20 /* QSGmailMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSGmailMediator.h; sourceTree = "<group>"; };
 		CD9ADF1616F38A9600914C20 /* QSGmailMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSGmailMediator.m; sourceTree = "<group>"; };
 		CD9ADF2816F3937A00914C20 /* QSMailMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QSMailMediator.h; path = ../elements.support.mail/QSMailMediator.h; sourceTree = "<group>"; };
+		CDD3F6EE16F404180000375B /* gmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gmail.png; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CDD3F6EE16F404180000375B /* gmail.png */,
 				CD9ADF1016F3850F00914C20 /* QSGmailPluginPrefs.xib */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 			);
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9ADF1116F3850F00914C20 /* QSGmailPluginPrefs.xib in Resources */,
+				CDD3F6EF16F404180000375B /* gmail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

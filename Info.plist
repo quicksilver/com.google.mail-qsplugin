@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>51</string>
+	<string>52</string>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -38,7 +38,7 @@
 
 &lt;p&gt;To enable Quicksilver to send email using the Gmail plugin, go to Quicksilver&apos;s Preferences, and within the &apos;Handlers&apos; tab, choose &apos;Gmail Module&apos; as the Mail Handler. Note that the Gmail Module has nothing to do with Google Notifier.&lt;/p&gt;</string>
 		<key>icon</key>
-		<string>com.google.GmailNotifier</string>
+		<string>GmaiIcon</string>
 		<key>relatedBundles</key>
 		<array>
 			<string>com.google.GmailNotifier</string>
@@ -55,13 +55,9 @@
 				<key>description</key>
 				<string>Gmail Login Preferences</string>
 				<key>icon</key>
-				<string>gmail</string>
+				<string>GmaiIcon</string>
 				<key>name</key>
 				<string>Gmail</string>
-				<key>nibBundle</key>
-				<string>com.blacktree.Quicksilver.QSGmailPlugIn</string>
-				<key>nibName</key>
-				<string>QSGmailPluginPrefs</string>
 			</dict>
 		</dict>
 		<key>QSMailMediators</key>
@@ -79,6 +75,24 @@
 				<string>com.blacktree.Quicksilver.QSEmailSupport</string>
 				<key>name</key>
 				<string>Mail Support</string>
+			</dict>
+		</array>
+	</dict>
+	<key>QSResourceAdditions</key>
+	<dict>
+		<key>GmaiIcon</key>
+		<array>
+			<dict>
+				<key>bundle</key>
+				<string>com.google.GmailNotifier</string>
+				<key>resource</key>
+				<string>GmailIcon.png</string>
+			</dict>
+			<dict>
+				<key>bundle</key>
+				<string>com.blacktree.Quicksilver.QSGmailPlugIn</string>
+				<key>resource</key>
+				<string>gmail.png</string>
 			</dict>
 		</array>
 	</dict>
