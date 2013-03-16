@@ -21,6 +21,7 @@
                                     @"465", QSMailMediatorPort,
                                     @"YES", QSMailMediatorTLS,
                                     @"YES", QSMailMediatorAuthenticate,
+                                    
                                     nil];
     NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:@"QSGmailUsername"];
     UInt32 passLen = 0;
