@@ -77,6 +77,8 @@
 				<string>Mail Support</string>
 			</dict>
 		</array>
+		<key>version</key>
+		<string>4000</string>
 	</dict>
 	<key>QSResourceAdditions</key>
 	<dict>
