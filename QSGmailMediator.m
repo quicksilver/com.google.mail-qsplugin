@@ -55,8 +55,9 @@
 	NSMutableString *mailURL = [NSMutableString stringWithString:@"https://mail.google.com/mail/?view=cm"];
 	[mailURL appendFormat:@"&fs=1"]; // fullscreen
 	[mailURL appendFormat:@"&tf=1"]; // tearoff
-	
-	[mailURL appendFormat:@"&to=%@", [addresses componentsJoinedByString:@", "]];
+	CFStringRef str = CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)[NSString stringWithFormat:@"&to=%@", [addresses componentsJoinedByString:@","]], NULL, CFSTR(",@."), kCFStringEncodingUTF8);
+	[mailURL appendString:(NSString*)str];
+    CFRelease(str);
     //	[mailURL appendFormat:@"&cc = %@",];
     //	[mailURL appendFormat:@"&bcc = %@",];
 	[mailURL appendFormat:@"&su=%@", [subject URLEncoding]];
