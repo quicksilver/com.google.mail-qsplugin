@@ -51,11 +51,12 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" preferredMaxLayoutWidth="367" translatesAutoresizingMaskIntoConstraints="NO" id="9OW-59-MRL">
-                                    <rect key="frame" x="15" y="19" width="367" height="98"/>
+                                    <rect key="frame" x="15" y="14" width="367" height="112"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="77y-Q1-Pac">
                                         <font key="font" metaFont="smallSystem"/>
-                                        <string key="title">To authenticate Quicksilver with your Gmail account, you set up create an App Password by following the instructions at:
+                                        <string key="title">To authenticate Quicksilver with your Gmail account, you set up create an App Password for 'Gmail' by following the instructions at:
+
 
 
 Only use an App Password in the box above, do not enter your normal Gmail password.</string>
@@ -120,7 +121,7 @@ DQ
                                     </connections>
                                 </button>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-IH-bPD">
-                                    <rect key="frame" x="16" y="60" width="335" height="32"/>
+                                    <rect key="frame" x="16" y="61" width="335" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="bevel" title="https://support.google.com/accounts/answer/185833?hl=en" alternateTitle="Saved!" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="56m-J7-Uup">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
