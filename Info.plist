@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>5C</string>
+	<string>60</string>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -34,8 +34,8 @@
 		<key>extendedDescription</key>
 		<string>&lt;h2&gt;Gmail Plugin&lt;/h2&gt;
 &lt;p&gt;The Gmail plugin allows you to use Quicksilver to send email via the Compose Email, Email Item..., and Email To... actions, through Gmail.&lt;/p&gt;
-&lt;p&gt;To enable Quicksilver to send email using the Gmail plugin, go to Quicksilver's Preferences, and within the 'Handlers' tab, choose 'Gmail Plugin' as the Mail Handler from the dropdown list.&lt;/p&gt;
-&lt;p&gt;Once set, open the &lt;a href="qs://preferences#QSGmailPluginPrefs"&gt;Gmail preferences&lt;/a&gt; and enter your username and password. This information is stored securely in the Apple OS X Keychain.&lt;/p&gt;</string>
+&lt;p&gt;To enable Quicksilver to send email using the Gmail plugin, go to Quicksilver&apos;s Preferences, and within the &apos;Handlers&apos; tab, choose &apos;Gmail Plugin&apos; as the Mail Handler from the dropdown list.&lt;/p&gt;
+&lt;p&gt;Once set, open the &lt;a href=&quot;qs://preferences#QSGmailPluginPrefs&quot;&gt;Gmail preferences&lt;/a&gt; and enter your username and password. This information is stored securely in the Apple OS X Keychain.&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>GmaiIcon</string>
 		<key>relatedBundles</key>

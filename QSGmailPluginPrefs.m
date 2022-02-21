@@ -12,6 +12,10 @@
 
 @implementation QSGmailPluginPrefs
 
+-(IBAction)openGmailHelp:(id)sender {
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://support.google.com/accounts/answer/185833?hl=en"]];
+}
+
 -(IBAction)saveInfo:(id)sender {
     NSString *username = usernameField.stringValue;
     NSString *password = passwordField.stringValue;

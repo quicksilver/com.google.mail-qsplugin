@@ -13,6 +13,7 @@
     IBOutlet NSSecureTextField *passwordField;
 }
 
+-(IBAction)openGmailHelp:(id)sender;
 -(IBAction)saveInfo:(id)sender;
 
 @end
