@@ -217,7 +217,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin\"",
-					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore/build-mac/build/$(CONFIGURATION)/include\"/**",
+					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore-prebuilt/include\"",
 				);
 				PRODUCT_NAME = "Gmail Plugin";
 			};
@@ -229,7 +229,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin\"",
-					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore/build-mac/build/$(CONFIGURATION)/include\"/**",
+					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore-prebuilt/include\"",
 				);
 				PRODUCT_NAME = "Gmail Plugin";
 			};
