@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment version="101000" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <deployment version="101400" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,48 +14,47 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="437" height="315"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="contentRect" x="196" y="240" width="612" height="432"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
             <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="437" height="315"/>
+                <rect key="frame" x="0.0" y="0.0" width="612" height="432"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" title="Gmail Login Details" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                        <rect key="frame" x="17" y="16" width="403" height="291"/>
+                        <rect key="frame" x="17" y="16" width="578" height="408"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="4s3-D3-mwv">
-                            <rect key="frame" x="3" y="3" width="397" height="272"/>
+                            <rect key="frame" x="4" y="5" width="570" height="387"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="KJ6-26-uJb">
-                                    <rect key="frame" x="15" y="128" width="97" height="16"/>
+                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="KJ6-26-uJb">
+                                    <rect key="frame" x="14" y="240" width="101" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" title="App Passwords" id="5hm-Zv-rXR">
-                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <font key="font" metaFont="systemSemibold" size="13"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" preferredMaxLayoutWidth="367" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                                    <rect key="frame" x="15" y="219" width="371" height="42"/>
+                                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" preferredMaxLayoutWidth="367" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                                    <rect key="frame" x="15" y="334" width="537" height="42"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="21">
-                                        <font key="font" metaFont="smallSystem"/>
-                                        <string key="title">Send emails directly from Quicksilver using Gmail. Enter your login information below to authenticate Quicksilver to send emails on your behalf.</string>
+                                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Send emails directly using Gmail. Enter your email and app password below to send emails using Gmail." id="21">
+                                        <font key="font" metaFont="system" size="12"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" preferredMaxLayoutWidth="367" translatesAutoresizingMaskIntoConstraints="NO" id="9OW-59-MRL">
-                                    <rect key="frame" x="15" y="14" width="367" height="112"/>
+                                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" preferredMaxLayoutWidth="367" translatesAutoresizingMaskIntoConstraints="NO" id="9OW-59-MRL">
+                                    <rect key="frame" x="14" y="40" width="538" height="192"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="77y-Q1-Pac">
-                                        <font key="font" metaFont="smallSystem"/>
-                                        <string key="title">To authenticate Quicksilver with your Gmail account, you set up create an App Password for 'Gmail' by following the instructions at:
+                                        <font key="font" metaFont="system" size="12"/>
+                                        <string key="title">To authenticate Quicksilver with your Gmail account, create an app password by following the instructions here:
 
 
 
@@ -64,11 +63,11 @@ Only use an App Password in the box above, do not enter your normal Gmail passwo
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                    <rect key="frame" x="97" y="165" width="142" height="16"/>
+                                <secureTextField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34">
+                                    <rect key="frame" x="133" y="273" width="254" height="20"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <secureTextFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="app password" drawsBackground="YES" usesSingleLineMode="YES" id="35">
-                                        <font key="font" metaFont="miniSystem"/>
+                                        <font key="font" metaFont="system" size="12"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         <allowedInputSourceLocales>
@@ -76,20 +75,11 @@ Only use an App Password in the box above, do not enter your normal Gmail passwo
                                         </allowedInputSourceLocales>
                                     </secureTextFieldCell>
                                 </secureTextField>
-                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41">
-                                    <rect key="frame" x="15" y="167" width="82" height="14"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="App Password:" id="42">
-                                        <font key="font" metaFont="smallSystem"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52">
-                                    <rect key="frame" x="97" y="186" width="142" height="16"/>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52">
+                                    <rect key="frame" x="133" y="297" width="254" height="20"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="username" drawsBackground="YES" usesSingleLineMode="YES" id="53">
-                                        <font key="font" metaFont="miniSystem"/>
+                                        <font key="font" metaFont="system" size="12"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
@@ -97,21 +87,21 @@ Only use an App Password in the box above, do not enter your normal Gmail passwo
                                         <binding destination="115" name="value" keyPath="values.QSGmailUsername" id="141"/>
                                     </connections>
                                 </textField>
-                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58">
-                                    <rect key="frame" x="15" y="189" width="74" height="11"/>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58">
+                                    <rect key="frame" x="15" y="299" width="112" height="17"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username:" id="59">
-                                        <font key="font" metaFont="smallSystem"/>
+                                        <font key="font" metaFont="system" size="12"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="106">
-                                    <rect key="frame" x="301" y="164" width="82" height="16"/>
+                                    <rect key="frame" x="459" y="285" width="90" height="24"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <buttonCell key="cell" type="push" title="Store" alternateTitle="Saved!" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="107">
+                                    <buttonCell key="cell" type="push" title="Store" alternateTitle="Saved!" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="107">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="miniSystem"/>
+                                        <font key="font" metaFont="smallSystem"/>
                                         <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -121,20 +111,29 @@ DQ
                                     </connections>
                                 </button>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-IH-bPD">
-                                    <rect key="frame" x="16" y="61" width="335" height="32"/>
+                                    <rect key="frame" x="16" y="168" width="495" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="bevel" title="https://support.google.com/accounts/answer/185833?hl=en" alternateTitle="Saved!" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="56m-J7-Uup">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="system" size="11"/>
+                                        <font key="font" metaFont="system" size="12"/>
                                     </buttonCell>
                                     <color key="contentTintColor" name="linkColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
                                         <action selector="openGmailHelp:" target="-2" id="unR-CW-6DD"/>
                                     </connections>
                                 </button>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41">
+                                    <rect key="frame" x="15" y="275" width="112" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="App Password:" id="42">
+                                        <font key="font" metaFont="system" size="12"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
                             </subviews>
                         </view>
-                        <font key="titleFont" metaFont="cellTitle"/>
+                        <font key="titleFont" metaFont="systemSemibold" size="12"/>
                     </box>
                 </subviews>
             </view>
@@ -142,7 +141,7 @@ DQ
                 <outlet property="delegate" destination="-2" id="138"/>
                 <outlet property="initialFirstResponder" destination="52" id="142"/>
             </connections>
-            <point key="canvasLocation" x="139.5" y="219.5"/>
+            <point key="canvasLocation" x="227" y="278"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="115"/>
     </objects>

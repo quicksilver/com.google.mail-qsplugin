@@ -222,7 +222,7 @@
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin\"",
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore-prebuilt/include\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.Quicksilver.QSGmailPlugIn;
 				PRODUCT_NAME = "Gmail Plugin";
 			};
@@ -238,7 +238,7 @@
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin\"",
 					"\"$(SRCROOT)/../elements.support.mail-qsplugin/MailCore-prebuilt/include\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.Quicksilver.QSGmailPlugIn;
 				PRODUCT_NAME = "Gmail Plugin";
 			};
